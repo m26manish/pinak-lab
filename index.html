@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        #assignment {
+            background: linear-gradient(to bottom right, #444499 50%, #ffffff 50%);
+        }
+        
+
+        .service-card:hover {
+            animation: rotate360 2s linear alternate-reverse;
+          
+        }
+
+        
+        @keyframes rotate360 {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+     
+        .icon-wrapper {
+            position: absolute;
+            top: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 50%;
+            border-color: blue;
+            cursor: pointer;
+        
+            
+    }
+    </style>
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen">
+    <div id="assignment" class="p-8 text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold  mb-12 ml-4 ">Our Services</h2>
+            <div class="flex flex-wrap justify-center gap-4 px-4">
+             
+                <!-- Service Card 1 -->
+                <div class="service-card relative bg-white rounded-lg shadow-lg p-6 w-60">
+                    <div class="icon-wrapper">
+                        <img src="emergency.png" alt="Service Icon" class="w-14 h-14 border-color-purple rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-600 text-center mt-10">Emergency Plumbing Services</h3>
+                    <p class="text-gray-600 text-center mt-2 mb-4 text-sm">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+                    <a href="#" class="text-blue-600 text-center block">Explore This Service ></a>
+                </div>
+    
+                <!-- Service Card 2 -->
+                <div class="service-card relative bg-white rounded-lg shadow-lg p-6 w-60">
+                    <div class="icon-wrapper">
+                        <img src="drain.png" alt="Service Icon" class="w-14 h-14 rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-600 text-center mt-10">Plumbing and Drains</h3>
+                    <p class="text-gray-600 text-center mt-2 mb-4 text-sm">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                    <a href="#" class="text-blue-600 text-center block">Explore This Service ></a>
+                </div>
+    
+                <!-- Service Card 3 -->
+                <div class="service-card relative bg-white rounded-lg shadow-lg p-6 w-60">
+                    <div class="icon-wrapper">
+                        <img src="drop.png" alt="Service Icon" class="w-14 h-14 border-color-purple rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-600 text-center mt-10">Water Damage</h3>
+                    <p class="text-gray-600 text-center mt-2 mb-4 text-sm">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                    <a href="#" class="text-blue-600 text-center block">Explore This Service > </a>
+                </div>
+    
+                <!-- Service Card 4 -->
+                <div class="service-card relative bg-white rounded-lg shadow-lg p-6 w-60">
+                    <div class="icon-wrapper">
+                        <img src="waterh.png" alt="Service Icon" class="w-14 h-14 border-color-purple rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-600 text-center mt-10">Water Heaters</h3>
+                    <p class="text-gray-600 text-center mt-2 mb-4 text-sm">Trust us for repair and replacement of gas, electric, and tankless water heaters.</p>
+                    <a href="#" class="text-blue-600 text-center block">Explore This Service ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
